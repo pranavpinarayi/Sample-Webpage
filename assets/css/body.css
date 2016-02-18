@@ -1,0 +1,14 @@
+body{
+    margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+    padding: 0;
+   
+}
+.normalSize{
+    position: relative;
+    width: 1366px;
+    height:768px; 
+    margin:0 auto;
+     background-image:url('/Sample/Assets/images/background.jpg' );
+    background-repeat:no-repeat;
+    background-size:cover;
+}

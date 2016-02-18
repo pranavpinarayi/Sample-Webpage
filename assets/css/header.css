@@ -1,0 +1,30 @@
+
+.navbar {
+    margin:0 auto;
+    position:fixed;
+    background-color:#404040;
+    width: 1366px;
+    height: 55px; 
+   
+}  
+.menuName{
+    float: left;
+    position:relative;
+    text-decoration:none;
+    height: 55px; 
+    width: 120px;
+    line-height: 55px;
+    text-align: center;
+    font-weight: bold;
+
+    font-size: 15px;
+    color: #fff;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+} 
+.menuName:hover {
+    background-color: #262626;    
+    color: yellow;
+}
+.websiteName:hover{
+     background-color: #000;    
+}
