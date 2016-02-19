@@ -1,4 +1,13 @@
 
+.normalSize{
+    position: relative;
+    width: 1366px;
+    height:768px; 
+    margin:0 auto;
+     background-image: url("../images/background.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 .navbar {
     margin:0 auto;
     position:fixed;
@@ -7,6 +16,9 @@
     height: 55px; 
    
 }  
+.logo{
+    height: 55px;
+}
 .menuName{
     float: left;
     position:relative;
@@ -25,6 +37,14 @@
     background-color: #262626;    
     color: yellow;
 }
-.websiteName:hover{
-     background-color: #000;    
+footer{
+            background:#303030;
+             height: 50px;
+             width:1366px;
+             margin: 0 auto;
+        }
+body{
+    margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+    padding: 0;
+   
 }
