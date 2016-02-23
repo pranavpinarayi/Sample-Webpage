@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>Sample Page</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/register.css">
+</head>
+<body >
+	<div class="normalSize" id="container">
+    <header>
+		<nav>
+		  <div class = "navbar">
+		    <div >
+		      <a class="menuName" href="../"><img src="../assets/images/logo.png" class="logo"></a>
+		    </div>
+		    <div >
+		      <a class="menuName" href="../">Home</a>
+		    </div>
+		    <div >
+		      <a class="menuName" href="#" style=" background-color:#262626;color: yellow;">Registration</a>
+		    </div>
+		  </div> 
+		 </nav>
+    </header>
+		 <div class = "description">
+            <h2 class="title">Royal Enfield</h2>
+            <p>Register to get information and updates:</p>    
+		  	   <div class="registrationForm">
+                 <form onsubmit="return register()">
+                     <table >
+                         <tr>	
+                         	<td><input type="text"  class="regField" placeholder="First Name"  name="fname"  onblur="nullCheck(this)" required></td>
+                         	<td><input type="text"  class ="regField" placeholder="Last Name" name="lname" onblur="nullCheck(this)" ></td>
+                         </tr>
+                         <tr>
+                             <td>
+                                <input type="password" class ="regField" id="pwd1" placeholder="Password" name="pwd" onblur="nullCheck(this)" required> </input>
+                            </td>
+                            <td>
+                                <input type="password" class ="regField" id="pwd2" placeholder="Re-Enter Password" onblur="nullCheck(this)" required></input>
+                             </td>
+                         </tr>
+                         <tr>
+                         	<td colspan="1"><input type="email" class="regField" placeholder="Email" name="mail"  onblur="nullCheck(this)" required></td>
+                            <td colspan="1"><input type= "text" class="regField" placeholder="Mobile Number" name="mobileNumber" id="phoneNumber" required onblur="nullCheck(this)"></td>
+                         </tr>
+                        
+                        <tr>
+                            <td colspan="2"><select onchange="change()" onblur="nullCheck(this)" name="model" required>
+                                        <option>Model</option>
+                                        <option>Classic 350</option>
+                                        <option>Classic 500</option>
+                                        <option>Bullet 350</option>
+                                        <option>Bullet 500</option>
+                                        <option>Thunderbird</option>
+                                    </select></td>
+                        </tr>   
+                         <tr>
+                            <td colspan="1" ><select required onblur="nullCheck(this)" name="state"> <option>State</option></select></td>
+                         	<td colspan="1"><select required onblur="nullCheck(this)" name="city"> <option>City</option></select></td></tr>	
+                         <tr><td colspan="2">Interested in a Test Ride?
+                            <input id="yes" type="radio" name="testDrive" value="yes" checked>
+                            <label for="yes">YES</label>
+                            <input id="no" type="radio" name="testDrive" value="no">
+                            <label for="no">NO</label>
+                         </td></tr>
+                        <tr><td colspan="2"><input type="checkbox" id="terms" required> </input><label for="terms"> I agree to terms and conditions</label></td></tr>
+                         <tr><td colspan="2"><button type="submit" class="regButton" name="regsubmit" onclick="register()">Register</button></td></tr>
+                     </table>
+                 </form>
+             </div>
+		 </div>
+	</div>
+<footer></br><center>Copyright 2016 by Royal Enfield	. All Rights Reserved.</center>
+</footer>
+</body>
+</html>
