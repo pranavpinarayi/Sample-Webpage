@@ -1,4 +1,12 @@
 
+function show_popup() {
+  var p = window.createPopup()
+  var pbody = p.document.body
+  pbody.style.backgroundColor = "lime"
+  pbody.style.border = "solid black 1px"
+  pbody.innerHTML = "This is a pop-up! Click outside to close."
+  p.show(150,150,200,50,document.body)
+}
 function nullCheck(txt){
     if(txt.value===""){
         txt.style.borderColor= "#F00";
@@ -25,6 +33,7 @@ function validatePhonenumber(number)
     number.style.borderColor = "#F00";
   }
 } 
+
 function  validatePasswordMatch(pwd1,pwd2){
     var regularExpression =  /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
     if(pwd1.value != pwd2.value){

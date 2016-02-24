@@ -1,0 +1,63 @@
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:     rgba(0,0,0,0.3);
+    z-index: 99999;
+    opacity:0;
+    pointer-events: none;
+    transition:all 1s;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 350px;
+    height: 300px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background-color:#fff;
+
+/*    border: 1px solid #bdc7d8;*/
+}
+.close {
+    color: #333;
+    line-height: 20px;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+
+table{
+    margin-top: 40px;
+    width: 100%;
+  border-spacing: 20px 0;
+
+}
+table td{
+    border-color: none;
+    border: 1px;
+}
+.loginField{
+   /* background: none;*/
+    position: relative;
+    border: 1px solid #333;/*#bdc7d8;*/
+    border-radius: 5px;
+    height: 35px;
+    color: #333;
+    font-size: 12px;
+    width: 100%;
+    font-family: helvetica, arial, sans-serif;
+}

@@ -19,6 +19,11 @@
 .logo{
     height: 55px;
 }
+.logout{
+    position: relative;
+    top: 12px;
+    height: 30px;
+}
 .menuName{
     float: left;
     position:relative;

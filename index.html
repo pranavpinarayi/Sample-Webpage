@@ -4,14 +4,41 @@
 	<title>Sample Page</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/home.css">
-
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
 </head>
 <body >
+	<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#" title="Close" class="close">X</a>
+		
+		<form>
+			<table>
+				<tr><td><h2>Login</h2></td></tr>
+				<tr>
+					<td>
+						<input type="email" class="loginField" id="loginEmail" placeholder="Email" name="mail"  onblur="nullCheck(this)" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+                        <input type="password" class ="loginField" id="loginpwd" placeholder="Password" name="pwd" onblur="nullCheck(this)" required> </input>
+                    </td>
+				</tr>
+				<tr>
+					<td>
+                        <button type="button" class ="loginField"   onclick="login()">Login</button> 
+                    </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</div>
 	<div class="normalSize">
+	<header>
 		<nav>
 		  <div class = "navbar">
 		    <div >
-		      <a class="menuName" href="#"><img src="assets/images/logo.png" class="logo"></a>
+		      <a class="menuName" ><img src="assets/images/logo.png" class="logo" ></a>
 		    </div>
 		    <div >
 		      <a class="menuName" href="#" style=" background-color:#262626;color: yellow;">Home</a>
@@ -19,13 +46,20 @@
 		    <div >
 		      <a class="menuName" href="html/registration.html">Registration</a>
 		    </div>
+		    <div >
+		      <a class="menuName" href="#openModal" id="login">Login</a>
+		    </div>
+		     <div class="menuName" id = "logout" style="float: right;"><img src="assets/images/logout.png" class="logout" onclick="logout()"></div>
+		    <div class="menuName" id = "user" style="float: right;"></div>
 		  </div> 
 		 </nav>
+		</header>
 		 <div class = "description">
 		  	    &nbsp &nbsp &nbsp The Enfield Cycle Company made motorcycles, bicycles, lawnmowers and stationary engines under the name Royal Enfield out of its works based at Redditch, Worcestershire. The legacy of weapons manufacture is reflected in the logo comprising the cannon, and the motto "Made like a gun". Use of the brand name Royal Enfield was licensed by the Crown in 1890
 		 </div>
 	</div>
 <footer></br><center>Copyright 2016 by Royal Enfield	. All Rights Reserved.</center>
 </footer>
+<script src="./javascript/login.js"></script>
 </body>
 </html>

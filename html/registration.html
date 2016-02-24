@@ -5,24 +5,56 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/register.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/login.css">
 </head>
 <body >
-	<div class="normalSize" id="container">
+	<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#" title="Close" class="close">X</a>
+        
+        <form>
+            <table>
+                <tr><td><h2>Login</h2></td></tr>
+                <tr>
+                    <td>
+                        <input type="email" class="loginField" id="loginEmail" placeholder="Email" name="mail"  onblur="nullCheck(this)" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" class ="loginField" id="loginpwd" placeholder="Password" name="pwd" onblur="nullCheck(this)" required> </input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" class ="loginField"   onclick="login()">Login</button> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </div>
+    <div class="normalSize">
     <header>
-		<nav>
-		  <div class = "navbar">
-		    <div >
-		      <a class="menuName" href="../"><img src="../assets/images/logo.png" class="logo"></a>
-		    </div>
-		    <div >
-		      <a class="menuName" href="../">Home</a>
-		    </div>
-		    <div >
-		      <a class="menuName" href="#" style=" background-color:#262626;color: yellow;">Registration</a>
-		    </div>
-		  </div> 
-		 </nav>
-    </header>
+        <nav>
+          <div class = "navbar">
+            <div >
+              <a class="menuName" ><img src="../assets/images/logo.png" class="logo" ></a>
+            </div>
+            <div >
+              <a class="menuName" href="../index.html" >Home</a>
+            </div>
+            <div >
+              <a class="menuName" href="#" style=" background-color:#262626;color: yellow;">Registration</a>
+            </div>
+            <div >
+              <a class="menuName" href="#openModal" id="login">Login</a>
+            </div>
+             <div class="menuName" id = "logout" style="float: right;"><img src="../assets/images/logout.png" class="logout" onclick="logout()"></div>
+            <div class="menuName" id = "user" style="float: right;"></div>
+          </div> 
+         </nav>
+        </header>
 		 <div class = "description">
             <h2 class="title">Royal Enfield</h2>
             <p>Register to get information and updates:</p>    
@@ -75,5 +107,6 @@
 <footer></br><center>Copyright 2016 by Royal Enfield	. All Rights Reserved.</center>
 </footer>
 <script src="../javascript/registerValidation.js"></script>
+<script src="../javascript/login.js"></script>
 </body>
 </html>
