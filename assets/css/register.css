@@ -1,0 +1,114 @@
+.regField::-webkit-input-placeholder { color:#fff; }
+.registrationForm{
+    position:relative;
+}
+table{
+    width: 100%;
+   border-collapse: separate;
+  border-spacing: 20px 0;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: normal;
+}
+table td{
+    width: 50%;
+    font-weight: 100;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/*css for input text field*/
+.regField{
+    background: none;
+    position: relative;
+    border: 1px solid #fff;/*#bdc7d8;*/
+    border-radius: 5px;
+    height: 35px;
+    color: #fff;
+    font-size: 12px;
+    width: 100%;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/*css for register button*/
+.regButton{
+    position: relative;
+    display: block;
+    margin:auto;
+    font-size: 15px;
+    font-family:  arial;
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    background: #1a0900;
+    border: 1px solid;
+    border-color: #fff;
+}
+
+/*css for all dropdown*/
+select{
+    position: relative;
+    background: none;
+    width: 100%;
+    position: relative;
+    padding: 12px 20px;   
+    border: 1px solid #fff;
+    border-radius: 0px;
+    color: #fff;
+    height: 35px;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+
+}
+h2.title{
+    text-align: center;
+    line-height: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+}
+p{
+    line-height: 0px;
+}
+
+/*css for radio and checkbox*/
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+input[type=radio],
+input[type=checkbox] {
+    display: none;
+}
+label:before {
+    content: "\2610";/*\0860  \20DE */
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 10px;
+    position: relative;
+    left: 0;
+    font-family:"AvenirNext-UltraLight";
+  font-weight:100;
+  line-height: 25px;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\25A3";/* small square"\25AA big \25A0"*/
+    color: #fff;
+    position: relative;
+    font-size: 25px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 25px;
+}
+
+input[type=checkbox]:checked + label:before {
+    content: "\2611";
+    font-size: 30px;
+    color: #f3f3f3;
+    text-align: center;
+}
